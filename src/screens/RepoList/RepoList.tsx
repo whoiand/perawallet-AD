@@ -79,8 +79,9 @@ const RepoList = () => {
     [allOrganizationsRepos]
   );
 
-  const filterElements = organizations.map((organization) => (
+  const filterElements = organizations.map((organization, index) => (
     <View
+      key={index}
       style={{
         flexDirection: "row",
         flexWrap: "wrap",
